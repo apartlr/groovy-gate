@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "src",
+  "lint-staged": {
+    "*.{js, jsx}": "eslint"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src",
     "lint": "eslint --fix src && prettier --write \"src/**/*.js\"",
     "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js, jsx}": "eslint"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
   "dependencies": {
     "bristol": "^0.4.0",
     "koa": "^2.11.0",
+    "lint-staged": "^9.4.2",
     "palin": "^2.3.0"
   }
 }
