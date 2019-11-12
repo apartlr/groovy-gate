@@ -1,0 +1,38 @@
+{
+  "name": "groovy-gate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src",
+    "lint": "eslint --fix src && prettier --write \"src/**/*.js\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js, jsx}": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apartlr/groovy-gate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apartlr/groovy-gate/issues"
+  },
+  "homepage": "https://github.com/apartlr/groovy-gate#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.9",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "bristol": "^0.4.0",
+    "koa": "^2.11.0",
+    "palin": "^2.3.0"
+  }
+}
