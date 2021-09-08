@@ -24,7 +24,7 @@ app.on('error', handleError);
 // Start server
 if (!module.parent) {
     const server = app.listen(3000, () => {
-        logger.info({ event: 'execute' }, 'API server listening on 3000');
+        logger.info({ event: 'execute' }, 'API server listening on 3000 port');
     });
     server.on('error', handleError);
 
